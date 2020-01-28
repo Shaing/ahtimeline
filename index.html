@@ -1,314 +1,242 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Allen Hunag's milestone during Innodisk corp.</title>
-<style>
-* {
-	box-sizing: border-box;
-}
-
-body {
-	background-color: #6e94b4a2;
-	font-family: Helvetica, sans-serif;
-}
-
-/* The actual timeline (the vertical ruler) */
-.timeline {
-	position: relative;
-	max-width: 1200px;
-	margin: 0 auto;
-}
-
-/* The actual timeline (the vertical ruler) */
-.timeline::after {
-	content: '';
-	position: absolute;
-	width: 6px;
-	background-color: white;
-	top: 0;
-	bottom: 0;
-	left: 50%;
-	margin-left: -3px;
-}
-
-/* Container around content */
-.container {
-	padding: 10px 40px;
-	position: relative;
-	background-color: inherit;
-	width: 50%;
-}
-
-/* The circles on the timeline */
-.container::after {
-	content: '';
-	position: absolute;
-	width: 25px;
-	height: 25px;
-	right: -17px;
-	background-color: white;
-	border: 4px solid rgb(255, 85, 85);
-	top: 15px;
-	border-radius: 50%;
-	z-index: 1;
-}
-
-/* Place the container to the left */
-.left {
-	left: 0;
-}
-
-/* Place the container to the right */
-.right {
-	left: 50%;
-}
-
-/* Add arrows to the left container (pointing right) */
-.left::before {
-	content: " ";
-	height: 0;
-	position: absolute;
-	top: 22px;
-	width: 0;
-	z-index: 1;
-	right: 30px;
-	border: medium solid white;
-	border-width: 10px 0 10px 10px;
-	border-color: transparent transparent transparent white;
-}
-
-/* Add arrows to the right container (pointing left) */
-.right::before {
-	content: " ";
-	height: 0;
-	position: absolute;
-	top: 22px;
-	width: 0;
-	z-index: 1;
-	left: 30px;
-	border: medium solid white;
-	border-width: 10px 10px 10px 0;
-	border-color: transparent white transparent transparent;
-}
-
-/* Fix the circle for containers on the right side */
-.right::after {
-	left: -16px;
-}
-
-/* The actual content */
-.content {
-	padding: 20px 30px;
-	background-color: white;
-	position: relative;
-	border-radius: 6px;
-}
-
-/* Media queries - Responsive timeline on screens less than 600px wide */
-@media screen and (max-width: 600px) {
-  /* Place the timelime to the left */
-  .timeline::after {
-	left: 31px;
-  }
-  
-  /* Full-width containers */
-  .container {
-	width: 100%;
-	padding-left: 70px;
-	padding-right: 25px;
-  }
-  
-  /* Make sure that all arrows are pointing leftwards */
-  .container::before {
-	left: 60px;
-	border: medium solid white;
-	border-width: 10px 10px 10px 0;
-	border-color: transparent white transparent transparent;
-  }
-
-  /* Make sure all circles are at the same spot */
-  .left::after, .right::after {
-	left: 15px;
-  }
-
-  /* Make all right containers behave like the left ones */
-  .right {
-	left: 0%;
-  }
-}
-li {
-	line-height: 30px
-}
-</style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Allen Huang's Milestone.</title>
 </head>
+
+
+<style>
+    @import url("https://fonts.googleapis.com/css?family=Exo+2:400,700&subset=cyrillic");
+    html {
+        box-sizing: border-box;
+    }
+
+    *,
+    *::before,
+    *::after {
+        box-sizing: inherit;
+    }
+
+    body {
+        font-family: 'Exo 2', sans-serif;
+        line-height: 1.5;
+    }
+
+    .wrapper {
+        margin: 0 auto;
+        padding: 0 16.66% 50px;
+        width: 100%;
+    }
+
+    article {
+        position: relative;
+        max-width: 980px;
+        margin: 0 auto;
+    }
+
+    .timeline__nav {
+        position: fixed;
+        z-index: 99;
+        top: 0;
+        -webkit-transition: top .3s ease-out;
+        transition: top .3s ease-out;
+    }
+
+    .timeline__nav ul {
+        list-style: none;
+        list-style-position: inside;
+        margin: 15px 0;
+    }
+
+    .timeline__nav ul li {
+        margin: 15px 0;
+        padding-left: 0;
+        list-style-type: none;
+        color: #bfc1c3;
+        border-bottom: 1px dotted rgba(0, 0, 0, 0.3);
+        cursor: pointer;
+        -webkit-transition: all .3s ease-out;
+        transition: all .3s ease-out;
+    }
+
+    .timeline__nav ul li.active {
+        font-weight: bold;
+        color: #f94125;
+        border-bottom: 1px dotted transparent;
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+
+    .timeline__nav ul li:hover {
+        color: #000;
+    }
+</style>
+
+
 <body>
-
-<div class="timeline">
-  <div class="container left">
-	<div class="content">
-		<h2>2019(update: 191201)</h2>
-		  <p>人工智慧, 機器學習, 深度學習, AIOT</p>
-		  <ul>
-		  </ul>
-		<hr>
-		  <p>專案列表</p>
-		  <ul>
-		  </ul>
-		<hr>
-		  <p>開發工具</p>
-		  <ul>
-		  </ul>
-		<hr>
-		  <p>工作經驗</p>
-		  <ul>
-		  </ul>
-		<hr>
-		  <p>管理人數: 1</p>
-		  <ul>
-		  </ul>
-		</div>
-  </div>
-  <div class="container right">
-	<div class="content">
-		<h2>2018</h2>
-		  <p>物聯網, 雲端架構, 智慧工廠, 新人求生指南教練</p>
-		  <ul>
-				<li>8月升任高級工程師</li>
-				<li>9月開學,就讀交通大學在職碩班資訊組</li>
-		  </ul>
-		<hr>
-		  <p>專案列表</p>
-		  <ul>
-				<li>[Windows] PCIE RW</li>
-				<li>[Windows] Application portal</li>
-				<li>[Web Service] Log download center</li>
-		  </ul>
-		<hr>
-		  <p>開發工具</p>
-		  <ul>
-			  <li>Programming language: python(CPython), html, SQL</li>
-			  <li>GUI: pyqt5</li>
-			  <li>DataBase: mariaDB, mongoDB</li>
-			  <li>Web deveolpe: Flask(RESTFul API), socket programming</li>
-		  </ul>
-		<hr>
-		  <p>工作經驗</p>
-		  <ul>
-				<li>NVMe disk測試, PCIE介面硬體位置判斷與熱插拔解決方案.</li>
-				<li>打造新人求生指南,縮短學習與探索時間,嘗試透過不一樣的教育訓練,提升效率.(成效:有經驗的新人可在三個月內獨立完成專案.)</li>
-				<li>Study SMART Factory 智慧工廠.</li>
-				<li>從資料庫數據分析使用者行為,改良與優化生產流程. 從資料可以推翻透過人工口耳相傳的Error現象,例如:人工斷定程式Bug,但實際上錯誤地使用流程.</li>
-				<li>進階資料庫操作. 使用view檢視表進行反正歸化整理,協助產品工程師分析異常,並分類原因.</li>
-				<li>開發軟體入口, 解決client與server之間的耦合性,並可以更彈性的調整測試機台的軟體使用以及介面管理.</li>
-		   </ul>
-		<hr>
-		  <p>管理人數: 1</p>
-		  <ul>
-		   </ul>
-		</div>
-  </div>
-  <div class="container left">
-	<div class="content">
-	  <h2>2017</h2>
-		  <p>軟體技術支援部 - 軟體工程師</p>
-		  <ul>
-			  <li>負責開發與維護工廠端生產軟體(內部使用)</li>
-			  <li>開發自動化解決方案軟體</li>
-			  <li>於開發端建立通用Library</li>
-			  <li>版本控制</li>
-		  </ul>
-		<hr>
-		  <p>專案列表</p>
-		  <ul>
-			  <li>[Windows] iPacker</li>
-			  <li>[Windows] QCheck</li>
-			  <li>[Windows] SNBinding</li>
-			  <li>[Windows] iSB</li>
-			  <li>[Windows] iDIO</li>
-			  <li>[Linux] FIO Wrapper test with GUI</li>
-		  </ul>
-		<hr>
-		  <p>開發工具</p>
-		  <ul>
-			  <li>Programming language: C/C++</li>
-			  <li>Compiler: gcc/g++ / MSVC</li>
-			  <li>GUI: mfc / gtk3.0 / JUCE</li>
-			  <li>Version control: SVN / GIT</li>
-			  <li>DataBase: SQLite3</li>
-		  </ul>
-		<hr>
-		  <p>工作經驗</p>
-		  <ul>
-			  <li>軟體開發環境建立</li>
-			  <li>從無到有開發桌面應用程式(GUI / CLI)</li>
-			  <li>跨作業系統開發: Windows7 / Ubuntu 16.04</li>
-			  <li>資料結構,利用vertor及string不斷分析輸入資料,進行防錯與自動化判別.</li>
-			  <li>平行處理,利用多執行緒同步執行多支Devices測試作業.</li>
-				<li>Win32 API, CreateFile, DeviceIoControl.</li>
-				<li>SQL語法, CRUD.</li>
-				<li>版本控制: trunk(master), branch, tag</li>
-				<li>單元測試, JUCE, CATCH2.</li>
-				<li>Vendor command測試</li>
-				<li>SATA/USB Disk測試</li>
-				<li>與MIS專案合作, 透過RESTFul API整合資料, 提供自動化解決方案</li>
-		  </ul>
-	</div>
-  </div>
-  <div class="container right">
-	<div class="content">
-	  	<h2>2016</h2>
-		  <p>接手1.8" & 2.5" SSD產品線</p>
-		  <ul>
-			  <li>01 - 10月 產品工程師</li>
-			  <li>10 - 12月 (pre)軟體工程師</li>
-		  </ul>
-		<hr>
-		  <p>工作職責</p>
-		  <ul>
-			  <li>MP & RW TOOL測試與軟體除錯</li>
-			  <li>SSD FW行為利用軟體測試除錯及反饋給FW-RD</li>
-			  <li>從生產端的角度分析NAND Flash體質並進行最佳化生產配置</li>
-		  </ul>
-		<hr>
-		  <p>工作經驗</p>
-		  <ul>
-			  <li>從軟體角度切入,思考如何增加自動化覆蓋率去縮減生產手法及防呆. 人工建立的資料流,改轉換至自動化的方式串接.</li>
-			  <li>排除硬體到驅動程式與FW間所產生的相容性問題. 交叉驗證的手法,收斂問題,避免相容性異常的組合.</li>
-			  <li>透過生產日誌,分析使用者行為與SSD行為模式. Flash壞塊原因與體質分析,避開重複檢測的可能性,抓出數據論點,定義最佳化測試流程.</li>
-			  <li>把生產流程與經驗轉化成程式碼引入自動化解決方案. 整合人工行為,使用程式碼建構流程.</li>
-		  </ul>
-	</div>
-  </div>
-  <div class="container left">
-	<div class="content">
-	  	<h2>2015.02</h2>
-		  <p>加入Innodisk - 製造處產品工程部</p>
-		  <ul>
-			  <li>02 - 04月 助理工程師</li>
-			  <li>05 - 12月 工程師</li>
-		  </ul>
-		<hr>
-		  <p>工作職責</p>
-		  <ul>
-			  <li>撰寫生產SOP</li>
-			  <li>撰寫生產作業指導書</li>
-			  <li>負責USB產品線</li>
-			  <li>USB客製專案生產導入</li>
-		  </ul>
-		<hr>
-		  <p>工作經驗</p>
-		  <ul>
-			  <li>SSD製造,生產,測試. 負責2.5"&1.8" form factor.</li>
-			  <li>配置桌機及作業系統,安排測試軟體搭配生產流程. 負責MPTOOL&RW TEST TOOL使用者規劃.</li>
-			  <li>參與跨部門合作,協調,共同完成新產品及客製專案. 從原料,組裝,測試,檢驗手法通通包辦.</li>
-			  <li>潤滑工廠生產流程,改善及縮減操作手法. 有效處理系統相容性異常,LBA28與NCQ等問題.</li>
-			  <li>SSD電路分析與維修,除錯,幫助工廠維修課解決不良產品,並回報HW-RD issue. 改善維修人員檢修手法,針對power ic進行量測.</li>
-			  <li>協助FAE解決客訴,分析製程及生產手法進行回饋與改善.</li>
-		  </ul>
-	</div>
-  </div>
-</div>
-
+    <article class="timeline">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <nav class="timeline__nav">
+            <ul>
+                <li><span>2019</span></li>
+                <li><span>2018</span></li>
+                <li><span>2017</span></li>
+                <li><span>2016</span></li>
+                <li><span>2015.02</span></li>
+            </ul>
+        </nav>
+        <section class="timeline__section">
+            <div class="wrapper">
+                <h2 class="milestone">2019</h2>
+                <p>人工智慧, 機器學習, 深度學習, AIOT</p>
+                <ul>
+                </ul>
+                <hr>
+                <p>專案列表</p>
+                <ul>
+                </ul>
+                <hr>
+                <p>開發工具</p>
+                <ul>
+                </ul>
+                <hr>
+                <p>工作經驗</p>
+                <ul>
+                </ul>
+                <hr>
+                <p>管理人數: 1</p>
+                <ul>
+                </ul>
+                <h2 class="milestone">2018</h2>
+                <p>物聯網, 雲端架構, 智慧工廠, 新人求生指南教練</p>
+                <ul>
+                    <li>8月升任高級工程師</li>
+                    <li>9月開學,就讀交通大學在職碩班資訊組</li>
+                </ul>
+                <hr>
+                <p>專案列表</p>
+                <ul>
+                    <li>[Windows] PCIE RW</li>
+                    <li>[Windows] Application portal</li>
+                    <li>[Web Service] Log download center</li>
+                </ul>
+                <hr>
+                <p>開發工具</p>
+                <ul>
+                    <li>Programming language: python(CPython), html, SQL</li>
+                    <li>GUI: pyqt5</li>
+                    <li>DataBase: mariaDB, mongoDB</li>
+                    <li>Web deveolpe: Flask(RESTFul API), socket programming</li>
+                </ul>
+                <hr>
+                <p>工作經驗</p>
+                <ul>
+                    <li>NVMe disk測試, PCIE介面硬體位置判斷與熱插拔解決方案.</li>
+                    <li>打造新人求生指南,縮短學習與探索時間,嘗試透過不一樣的教育訓練,提升效率.(成效:有經驗的新人可在三個月內獨立完成專案.)</li>
+                    <li>Study SMART Factory 智慧工廠.</li>
+                    <li>從資料庫數據分析使用者行為,改良與優化生產流程. 從資料可以推翻透過人工口耳相傳的Error現象,例如:人工斷定程式Bug,但實際上錯誤地使用流程.</li>
+                    <li>進階資料庫操作. 使用view檢視表進行反正歸化整理,協助產品工程師分析異常,並分類原因.</li>
+                    <li>開發軟體入口, 解決client與server之間的耦合性,並可以更彈性的調整測試機台的軟體使用以及介面管理.</li>
+                </ul>
+                <hr>
+                <p>管理人數: 1</p>
+                <ul>
+                </ul>
+                <h2 class="milestone">2017</h2>
+                <p>軟體技術支援部 - 軟體工程師</p>
+                <ul>
+                    <li>負責開發與維護工廠端生產軟體(內部使用)</li>
+                    <li>開發自動化解決方案軟體</li>
+                    <li>於開發端建立通用Library</li>
+                    <li>版本控制</li>
+                </ul>
+                <hr>
+                <p>專案列表</p>
+                <ul>
+                    <li>[Windows] iPacker</li>
+                    <li>[Windows] QCheck</li>
+                    <li>[Windows] SNBinding</li>
+                    <li>[Windows] iSB</li>
+                    <li>[Windows] iDIO</li>
+                    <li>[Linux] FIO Wrapper test with GUI</li>
+                </ul>
+                <hr>
+                <p>開發工具</p>
+                <ul>
+                    <li>Programming language: C/C++</li>
+                    <li>Compiler: gcc/g++ / MSVC</li>
+                    <li>GUI: mfc / gtk3.0 / JUCE</li>
+                    <li>Version control: SVN / GIT</li>
+                    <li>DataBase: SQLite3</li>
+                </ul>
+                <hr>
+                <p>工作經驗</p>
+                <ul>
+                    <li>軟體開發環境建立</li>
+                    <li>從無到有開發桌面應用程式(GUI / CLI)</li>
+                    <li>跨作業系統開發: Windows7 / Ubuntu 16.04</li>
+                    <li>資料結構,利用vertor及string不斷分析輸入資料,進行防錯與自動化判別.</li>
+                    <li>平行處理,利用多執行緒同步執行多支Devices測試作業.</li>
+                    <li>Win32 API, CreateFile, DeviceIoControl.</li>
+                    <li>SQL語法, CRUD.</li>
+                    <li>版本控制: trunk(master), branch, tag</li>
+                    <li>單元測試, JUCE, CATCH2.</li>
+                    <li>Vendor command測試</li>
+                    <li>SATA/USB Disk測試</li>
+                    <li>與MIS專案合作, 透過RESTFul API整合資料, 提供自動化解決方案</li>
+                </ul>
+                <h2 class="milestone">2016</h2>
+                <p>接手1.8" & 2.5" SSD產品線</p>
+                <ul>
+                    <li>01 - 10月 產品工程師</li>
+                    <li>10 - 12月 (pre)軟體工程師</li>
+                </ul>
+                <hr>
+                <p>工作職責</p>
+                <ul>
+                    <li>MP & RW TOOL測試與軟體除錯</li>
+                    <li>SSD FW行為利用軟體測試除錯及反饋給FW-RD</li>
+                    <li>從生產端的角度分析NAND Flash體質並進行最佳化生產配置</li>
+                </ul>
+                <hr>
+                <p>工作經驗</p>
+                <ul>
+                    <li>從軟體角度切入,思考如何增加自動化覆蓋率去縮減生產手法及防呆. 人工建立的資料流,改轉換至自動化的方式串接.</li>
+                    <li>排除硬體到驅動程式與FW間所產生的相容性問題. 交叉驗證的手法,收斂問題,避免相容性異常的組合.</li>
+                    <li>透過生產日誌,分析使用者行為與SSD行為模式. Flash壞塊原因與體質分析,避開重複檢測的可能性,抓出數據論點,定義最佳化測試流程.</li>
+                    <li>把生產流程與經驗轉化成程式碼引入自動化解決方案. 整合人工行為,使用程式碼建構流程.</li>
+                </ul>
+                <h2 class="milestone">2015.02</h2>
+                <p>加入Innodisk - 製造處產品工程部</p>
+                <ul>
+                    <li>02 - 04月 助理工程師</li>
+                    <li>05 - 12月 工程師</li>
+                </ul>
+                <hr>
+                <p>工作職責</p>
+                <ul>
+                    <li>撰寫生產SOP</li>
+                    <li>撰寫生產作業指導書</li>
+                    <li>負責USB產品線</li>
+                    <li>USB客製專案生產導入</li>
+                </ul>
+                <hr>
+                <p>工作經驗</p>
+                <ul>
+                    <li>SSD製造,生產,測試. 負責2.5"&1.8" form factor.</li>
+                    <li>配置桌機及作業系統,安排測試軟體搭配生產流程. 負責MPTOOL&RW TEST TOOL使用者規劃.</li>
+                    <li>參與跨部門合作,協調,共同完成新產品及客製專案. 從原料,組裝,測試,檢驗手法通通包辦.</li>
+                    <li>潤滑工廠生產流程,改善及縮減操作手法. 有效處理系統相容性異常,LBA28與NCQ等問題.</li>
+                    <li>SSD電路分析與維修,除錯,幫助工廠維修課解決不良產品,並回報HW-RD issue. 改善維修人員檢修手法,針對power ic進行量測.</li>
+                    <li>協助FAE解決客訴,分析製程及生產手法進行回饋與改善.</li>
+                </ul>
+            </div>
+        </section>
+    </article>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="index.js"></script>
 </body>
+
 </html>
